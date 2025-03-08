@@ -1,5 +1,5 @@
 # #### Inteiros (`int`)
-
+import math
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 
 numero01 = int(input("Digite o primeiro número: "))
@@ -38,12 +38,10 @@ print(resultado)
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
-import math
 
 raio_circulo = float(input("Digite o raio: "))
 area_circulo = math.pi * raio_circulo ** 2
-area_circulo_formata = "{:2f}".format(area_circulo)
-print(area_circulo_formata)
+print(f"{area_circulo: .2f}")
 
 # #### Strings (`str`)
 
